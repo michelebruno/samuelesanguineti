@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: 'samuelesanguineti',
     siteMetadata: {
         title: 'Immagini come lettere di un alfabeto',
         description:
