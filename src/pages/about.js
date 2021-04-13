@@ -3,12 +3,7 @@ import Layout from '../components/Layout';
 
 export default function Home() {
 
-  return <Layout>
-    <header className="row pt-5">
-      <div className="col-12">
-        <h1 className={'h3'}>Hi, my name is<br/>Samuele Sanguineti</h1>
-      </div>
-    </header>
+  return <Layout header={<h1 className={'h3'} style={{lineHeight: 1}}>Hi, my name is<br/>Samuele Sanguineti</h1>}>
     <div className="row">
       <div className="col-12 col-md-8 border border-dark border-left-0
         border-bottom-0" >

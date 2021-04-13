@@ -1,12 +1,21 @@
 import React from 'react';
-import '../scss/style.scss'
-export default function Layout({children}) {
+import '../scss/style.scss';
 
-  return <div className={'container-fluid'}>
+export default function Layout({children, header}) {
+
+  return <div className={'container-fluid'} >
+    <header className="row">
+      <div className="col-6">
+        {typeof header === 'string' ?
+            <h1 className={'h3 pt-5 pb-4'}>{header}</h1>  :
+            header}
+      </div>
+    </header>
     <main>{children}</main>
     <footer className={'row'}>
       <div className="col-12">
-        <a className="font-weight-bold small" href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
+        <a className="font-weight-bold small"
+           href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
       </div>
       <div className="col-6">
 
