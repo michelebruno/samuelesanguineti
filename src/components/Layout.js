@@ -4,13 +4,13 @@ import '../scss/style.scss';
 export default function Layout({children, header}) {
 
   return <div className={'container-fluid'} >
-    <header className="row">
+    {header && <header className="row  py-3">
       <div className="col-6">
         {typeof header === 'string' ?
-            <h1 className={'h3 pt-5 pb-4'}>{header}</h1>  :
+            <h1 className={'h3 pt-5 pb-4'}>{header}</h1> :
             header}
       </div>
-    </header>
+    </header>}
     <main>{children}</main>
     <footer className={'row'}>
       <div className="col-12">

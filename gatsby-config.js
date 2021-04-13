@@ -1,9 +1,9 @@
 module.exports = {
     pathPrefix: 'samuelesanguineti',
     siteMetadata: {
-        title: 'Immagini come lettere di un alfabeto',
+        title: 'Samuele Sanguineti__Portfolio',
         description:
-            'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+            'My name is Samuele, and I am attending a Master degree in Design for the Fashion System at Politecnico di Milano.',
         author: 'Michele Bruno',
     },
     plugins: [
@@ -16,7 +16,8 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
-        'gatsby-transformer-sharp',
+        'gatsby-plugin-image',
         'gatsby-plugin-sharp',
+        'gatsby-transformer-sharp',
     ]
 }

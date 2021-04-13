@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
-import GatsbyImage from 'gatsby-image';
+import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 
 export default function SanBenedetto({data: {images}}) {
   return <Layout header={'Thé San Benedetto'}>
@@ -21,29 +21,35 @@ export default function SanBenedetto({data: {images}}) {
     <p><b>Role:</b> Creation of illustrations, branding, creation of digital
       content.</p>
     <p><b>NABA 2018</b></p>
-    <div className="row no-gutters"  >
-      <div className="col-12 col-md-6 p-1"><GatsbyImage
-          fluid={images.nodes[6].childImageSharp.fluid}/>
+    <div className="row no-gutters">
+      <div className="col-12 col-md-6 p-1">
+        <GatsbyImage
+          image={getImage(images.nodes[6])}/>
       </div>
-      <div className="col-12 col-md-6 p-1"><GatsbyImage
-          fluid={images.nodes[3].childImageSharp.fluid}/>
+      <div className="col-12 col-md-6 p-1">
+        <GatsbyImage
+          image={getImage(images.nodes[3])}/>
       </div>
-      <div className="col-12 col-md-6 p-1"><GatsbyImage
-          fluid={images.nodes[4].childImageSharp.fluid}/>
+      <div className="col-12 col-md-6 p-1">
+        <GatsbyImage
+          image={getImage(images.nodes[4])}/>
       </div>
-      <div className="col-12 col-md-6 p-1"><GatsbyImage
-          fluid={images.nodes[5].childImageSharp.fluid}/>
+      <div className="col-12 col-md-6 p-1">
+        <GatsbyImage
+          image={getImage(images.nodes[5])}/>
       </div>
       <div className="w-100"></div>
       <div className="col-4">
         <GatsbyImage
-            fluid={images.nodes[0].childImageSharp.fluid}/>
+            image={getImage(images.nodes[0])}/>
       </div>
-      <div className="col-4"><GatsbyImage
-          fluid={images.nodes[1].childImageSharp.fluid}/>
+      <div className="col-4">
+        <GatsbyImage
+            image={getImage(images.nodes[1])}/>
       </div>
-      <div className="col-4"><GatsbyImage
-          fluid={images.nodes[2].childImageSharp.fluid}/>
+      <div className="col-4">
+        <GatsbyImage
+            image={getImage(images.nodes[2])}/>
       </div>
     </div>
   </Layout>;
@@ -54,9 +60,7 @@ export const query = graphql`{
         id
         relativePath
         childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       } 
     }
