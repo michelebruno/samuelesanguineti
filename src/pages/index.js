@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import {Link} from 'gatsby';
+import SEO from '../components/SEO';
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
     },
   ]
   return <Layout hideNavigation>
+    <SEO title={"Portfolio"}/>
     <header className="row py-3">
       <h1 className={'h3 col-6'} style={{lineHeight: '1'}}>samuele<br/>
         sanguineti__Portfolio</h1>

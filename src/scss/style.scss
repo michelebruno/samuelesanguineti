@@ -7,11 +7,11 @@ $font-weight-bold: 600;
 $font-size-base: 1.5rem;
 
 $link-color: #212529;
-$grid-gutter-width: 70px;
+$grid-gutter-width: 30px;
 
 $line-height-base: 1;
 
 @import "~bootstrap";
-.project-gallery > div {
+.project-gallery > div:not(.w-100) {
   padding-top: $grid-gutter-width ;
 }

@@ -1,7 +1,7 @@
 module.exports = {
     pathPrefix: 'samuelesanguineti',
     siteMetadata: {
-        title: 'Samuele Sanguineti__Portfolio',
+        title: 'Samuele Sanguineti',
         description:
             'My name is Samuele, and I am attending a Master degree in Design for the Fashion System at Politecnico di Milano.',
         author: 'Michele Bruno',
