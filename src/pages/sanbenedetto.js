@@ -21,20 +21,20 @@ export default function SanBenedetto({data: {images}}) {
     <p><b>Role:</b> Creation of illustrations, branding, creation of digital
       content.</p>
     <p><b>NABA 2018</b></p>
-    <div className="row no-gutters">
-      <div className="col-12 col-md-6 p-1">
+    <div className="row project-gallery">
+      <div className="col-12 col-md-6">
         <GatsbyImage
           image={getImage(images.nodes[6])}/>
       </div>
-      <div className="col-12 col-md-6 p-1">
+      <div className="col-12 col-md-6">
         <GatsbyImage
           image={getImage(images.nodes[3])}/>
       </div>
-      <div className="col-12 col-md-6 p-1">
+      <div className="col-12 col-md-6">
         <GatsbyImage
           image={getImage(images.nodes[4])}/>
       </div>
-      <div className="col-12 col-md-6 p-1">
+      <div className="col-12 col-md-6">
         <GatsbyImage
           image={getImage(images.nodes[5])}/>
       </div>

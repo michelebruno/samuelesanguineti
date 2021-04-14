@@ -4,7 +4,17 @@ import {Link} from 'gatsby';
 
 export default function Home() {
 
-  return <Layout>
+  const pages = [
+    {
+      label: 'Golfo del Tigullio',
+      path: '/golfodeltigullio'
+    },
+    {
+      label: 'Thè San Benedetto',
+      path: "/sanbenedetto"
+    },
+  ]
+  return <Layout hideNavigation>
     <header className="row py-3">
       <h1 className={'h3 col-6'} style={{lineHeight: '1'}}>samuele<br/>
         sanguineti__Portfolio</h1>
@@ -24,6 +34,15 @@ export default function Home() {
         </h2>
         <h4 className={'text-right'}>Fashion and communication designer</h4>
       </div>
+      <div className="col-12 col-md-6 offset-md-6">
+        <ul className="list-unstyled">
+          {pages.map(({label, path}) =><li key={path} className={"h2 border-bottom border-dark pt-3"}>
+            <Link to={path}>{label}</Link>
+          </li> )}
+
+        </ul>
+      </div>
     </div>
+
   </Layout>;
 }

@@ -1,10 +1,16 @@
 import React from 'react';
 import '../scss/style.scss';
+import Link from 'gatsby-link';
 
-export default function Layout({children, header}) {
+export default function Layout({children, header, hideNavigation}) {
 
   return <div className={'container-fluid'} >
-    {header && <header className="row  py-3">
+    {hideNavigation || <nav className="row pt-5">
+      <div className="col">
+        <Link to={'/'}>Back</Link>
+      </div>
+    </nav>}
+    {header && <header className="row ">
       <div className="col-6">
         {typeof header === 'string' ?
             <h1 className={'h3 pt-5 pb-4'}>{header}</h1> :
@@ -12,7 +18,7 @@ export default function Layout({children, header}) {
       </div>
     </header>}
     <main>{children}</main>
-    <footer className={'row'}>
+    <footer className={'row py-3'}>
       <div className="col-12">
         <a className="font-weight-bold small"
            href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
@@ -24,7 +30,6 @@ export default function Layout({children, header}) {
       <div className="col-6">
         <a href="https://www.linkedin.com/in/samuele-sanguineti-1269b5206/">Linkedin</a>
       </div>
-
     </footer>
   </div>;
 }

@@ -12,3 +12,6 @@ $grid-gutter-width: 70px;
 $line-height-base: 1;
 
 @import "~bootstrap";
+.project-gallery > div {
+  padding-top: $grid-gutter-width ;
+}
