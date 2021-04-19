@@ -11,7 +11,7 @@ export default function Layout({children, header, hideNavigation}) {
       </div>
     </nav>}
     {header && <header className="row ">
-      <div className="col-6">
+      <div className="col-12 col-md-6">
         {typeof header === 'string' ?
             <h1 className={'h3 pt-5 pb-4'}>{header}</h1> :
             header}

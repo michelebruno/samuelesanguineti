@@ -10,8 +10,7 @@ export default function Home({data: {profile}}) {
       header={<h1 className={'h3'} style={{lineHeight: 1}}>Hi, my name is<br/>Samuele
         Sanguineti</h1>}>
     <div className="row">
-      <div className="col-12 col-md-8 border border-dark border-left-0
-        border-bottom-0">
+      <div className="col-12 col-lg-8 border-top border-dark ">
         <p className={' pt-4'}>I was born and raised in a town called
           Rapallo, that overlooks the Ligurian Sea to which I own a lot of my
           personal growth.
@@ -41,7 +40,7 @@ export default function Home({data: {profile}}) {
         </ul>
 
       </div>
-      <div className="col-12 col-md">
+      <div className="col-12 col-lg-4 border-dark border-left " >
         <p className={'small'}>Milano / Italia <br/>
           for information and collaboration:<br/>
           <a className="font-weight-bold"
@@ -52,7 +51,7 @@ export default function Home({data: {profile}}) {
           <a href="https://www.linkedin.com/in/samuele-sanguineti-1269b5206/">Linkedin</a>
         </p>
       </div>
-      <div className="col-12 col-md-8 border-dark border-right pt-5">
+      <div className="col-12 col-md-8 pt-5">
         <div className="w-50">
           <GatsbyImage alt={'Samuele Sanguineti resume pic'}
                        image={getImage(profile)}/>
@@ -60,7 +59,7 @@ export default function Home({data: {profile}}) {
         </div>
       </div>
 
-      <div className="col-12 col-md">
+      <div className="col-12 col-md border-dark border-left h-100">
         <p className=" "><a
             href={'/samuelesanguineti_cv_eng.pdf'} download>CV english</a>
           <br/>
