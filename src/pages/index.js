@@ -36,14 +36,14 @@ export default function Home() {
         </h2>
         <h4 className={'text-right'}>Fashion and communication designer</h4>
       </div>
-      <div className="col-12 col-md-6 offset-md-6">
-        <ul className="list-unstyled">
-          {pages.map(({label, path}) =><li key={path} className={"h2 border-bottom border-dark pt-3"}>
+      <nav className="col-12 col-md-6 offset-md-6">
+        <ul className="list-unstyled projects-list">
+          {pages.map(({label, path}) =><li key={path} className={"h2 border-bottom border-dark pt-4"}>
             <Link to={path}>{label}</Link>
           </li> )}
 
         </ul>
-      </div>
+      </nav>
     </div>
 
   </Layout>;

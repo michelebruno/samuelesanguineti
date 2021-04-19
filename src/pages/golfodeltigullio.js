@@ -14,6 +14,7 @@ export default function SanBenedetto({data: {images}}) {
     </p>
     <p><b>Role:</b> Branding, creating an effective communication plan, project organization, organizing a new entity with the possibility of publication.</p>
     <p><b>NABA 2018</b></p>
+    <p><b><a href="/samuelesanguineti_tesi_Golfo del Tigullio.pdf">(ita) Bachelor’s Degree Thesis </a></b></p>
     <div className="row  justify-content-center project-gallery">
       <div className="col-12 col-md-6">
         <GatsbyImage

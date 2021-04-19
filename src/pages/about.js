@@ -1,12 +1,17 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import {graphql} from 'gatsby';
+import {GatsbyImage, getImage} from 'gatsby-plugin-image';
+import Link from 'gatsby-link';
 
-export default function Home() {
+export default function Home({data: {profile}}) {
 
-  return <Layout header={<h1 className={'h3'} style={{lineHeight: 1}}>Hi, my name is<br/>Samuele Sanguineti</h1>}>
+  return <Layout
+      header={<h1 className={'h3'} style={{lineHeight: 1}}>Hi, my name is<br/>Samuele
+        Sanguineti</h1>}>
     <div className="row">
       <div className="col-12 col-md-8 border border-dark border-left-0
-        border-bottom-0" >
+        border-bottom-0">
         <p className={' pt-4'}>I was born and raised in a town called
           Rapallo, that overlooks the Ligurian Sea to which I own a lot of my
           personal growth.
@@ -39,21 +44,31 @@ export default function Home() {
       <div className="col-12 col-md">
         <p className={'small'}>Milano / Italia <br/>
           for information and collaboration:<br/>
-          <a className="font-weight-bold" href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
+          <a className="font-weight-bold"
+             href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
         </p>
         <p className={'small'}>
           <a href="https://www.instagram.com/samusang/">@samusang</a><br/>
           <a href="https://www.linkedin.com/in/samuele-sanguineti-1269b5206/">Linkedin</a>
         </p>
       </div>
-      <div className="col-12 col-md-8 border-dark border-right">
+      <div className="col-12 col-md-8 border-dark border-right pt-5">
+        <div className="w-50">
+          <GatsbyImage alt={'Samuele Sanguineti resume pic'}
+                       image={getImage(profile)}/>
 
+        </div>
       </div>
 
       <div className="col-12 col-md">
-
+        <p className=" "><a
+            href={'/samuelesanguineti_cv_eng.pdf'} download>CV english</a>
+          <br/>
+          <a
+              href={'/samuelesanguineti_cv_it.pdf'} download>CV italiano</a>
+        </p>
         <p className="font-weight-bold">Additional information about me:</p>
-        <p className={'font-weight-bold'}>Software</p>
+        <p className={'font-weight-bold'}>+ Software</p>
         <ul className="list-unstyled">
           <li>Adobe Photoshop</li>
           <li>Adobe Illustrator</li>
@@ -72,3 +87,17 @@ export default function Home() {
     </div>
   </Layout>;
 }
+
+export const query = graphql`{
+  profile: file(relativePath: {eq: "samuelesanguineti.jpg"}) {
+      id
+      relativePath
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 1000
+        )
+      }
+      publicURL
+  }
+}`;
