@@ -2,13 +2,12 @@ import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 export default function SanBenedetto({data: {images}}) {
-  console.log(images);
 
   return <Layout header={'Faith Connexion'}>
-    <SEO title={'Faith Connexion'}/>
+    <Seo title={'Faith Connexion'}/>
     <p>Faith connexion was my first photography job, done at NABA during my
       photography class. The job consisted of photographing for this e-commerce
       site. The concept of Faith Connexion is best described as multiple brands
