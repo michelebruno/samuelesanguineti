@@ -55,8 +55,7 @@ export const query = graphql`{
         id
         relativePath
         childImageSharp {
-          gatsbyImageData(
-            width: 1920
+          gatsbyImageData( 
             layout: FULL_WIDTH
           )
         }

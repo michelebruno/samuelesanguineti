@@ -93,7 +93,6 @@ export const query = graphql`{
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH
-          width: 1000
         )
       }
       publicURL
