@@ -16,7 +16,7 @@ export default function SanBenedetto({data: {images}}) {
     <p><b>NABA 2018</b></p>
     <p><b><a href="/samuelesanguineti_tesi_Golfo del Tigullio.pdf">(ita) Bachelor’s Degree Thesis </a></b></p>
     <div className="row  justify-content-center project-gallery">
-      <div className="col-12 col-md-6">
+      <div className="col-12 col-md-4">
         <GatsbyImage
           image={getImage(images.nodes[5])}/>
       </div>
@@ -63,7 +63,7 @@ export default function SanBenedetto({data: {images}}) {
         <GatsbyImage
             image={getImage(images.nodes[10])}  className={"h-100"}  />
       </div>
-      <div className="col-8">
+      <div className="col-12 col-md-8 offset-md-4">
         <GatsbyImage
             image={getImage(images.nodes[9])}/>
       </div>

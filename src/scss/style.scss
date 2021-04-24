@@ -55,6 +55,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .project-gallery > div:not(.w-100) {
   padding-top: $grid-gutter-width ;
 }
@@ -71,30 +72,23 @@ html {
 }
 
 #fc-pics-container {
-  width: 100%;
-  padding-top: 152%;
-  position: relative;
-  & > * {
-    position: absolute;
-  }
+   position: relative;
+  overflow-x: hidden;
 }
 
 #fc1 {
   @extend .col-8;
-  left: 0;
-  top: 0;
 }
 
 #fc2 {
   @extend .col-4;
   right: 0;
   top: 0;
+  position: absolute;
 }
 
 #fc3 {
-  @extend .col-7;
-  left: 15%;
-  top: calc(27.5% + #{$grid-gutter-width});
+  @extend .col-7, .offset-md-2;
   z-index: -1;
 }
 #fc4 {

@@ -18,7 +18,7 @@ export default function Layout({children, header, hideNavigation}) {
       </div>
     </header>}
     <main>{children}</main>
-    <footer className={'row py-3'}>
+    <footer className={'row pt-5 pb-3'}>
       <div className="col-9">
         <div className="row">
 
