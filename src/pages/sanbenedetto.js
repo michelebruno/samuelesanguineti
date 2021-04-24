@@ -27,11 +27,11 @@ export default function SanBenedetto({data: {images}}) {
     <div className="row project-gallery">
       <div className="col-12 col-md-6">
         <GatsbyImage
-          image={getImage(images.nodes[6])}/>
+          image={getImage(images.nodes[7])}/>
       </div>
       <div className="col-12 col-md-6">
         <GatsbyImage
-          image={getImage(images.nodes[3])}/>
+          image={getImage(images.nodes[6])}/>
       </div>
       <div className="col-12 col-md-6">
         <GatsbyImage
@@ -42,17 +42,9 @@ export default function SanBenedetto({data: {images}}) {
           image={getImage(images.nodes[5])}/>
       </div>
       <div className="w-100"></div>
-      <div className="col-4">
+      <div className="col-12">
         <GatsbyImage
             image={getImage(images.nodes[0])}/>
-      </div>
-      <div className="col-4">
-        <GatsbyImage
-            image={getImage(images.nodes[1])}/>
-      </div>
-      <div className="col-4">
-        <GatsbyImage
-            image={getImage(images.nodes[2])}/>
       </div>
     </div>
   </Layout>;
@@ -63,7 +55,10 @@ export const query = graphql`{
         id
         relativePath
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            width: 1920
+            layout: FULL_WIDTH
+          )
         }
       } 
     }

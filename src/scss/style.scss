@@ -65,3 +65,44 @@ $line-height-base: 1;
      }
    }
 }
+
+#fc-pics-container {
+  width: 100%;
+  padding-top: 152%;
+  position: relative;
+  & > * {
+    position: absolute;
+  }
+}
+
+#fc1 {
+  @extend .col-8;
+  left: 0;
+  top: 0;
+}
+
+#fc2 {
+  @extend .col-4;
+  right: 0;
+  top: 0;
+}
+
+#fc3 {
+  @extend .col-7;
+  left: 15%;
+  top: calc(27.5% + #{$grid-gutter-width});
+  z-index: -1;
+}
+#fc4 {
+  width: 72%;
+  z-index: -1;
+}
+#fc5 {
+  top: 0;
+  left: 72%;
+  width: 100%;
+  padding: $grid-gutter-width;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+}

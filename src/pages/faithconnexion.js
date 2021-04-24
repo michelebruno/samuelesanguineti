@@ -5,6 +5,8 @@ import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 import SEO from '../components/SEO';
 
 export default function SanBenedetto({data: {images}}) {
+  console.log(images);
+
   return <Layout header={'Faith Connexion'}>
     <SEO title={'Faith Connexion'}/>
     <p>Faith connexion was my first photography job, done at NABA during my
@@ -19,11 +21,41 @@ export default function SanBenedetto({data: {images}}) {
       shots that could reflect the brand. In this job there was the creation of
       outfits, study of positions, study of environments
     </p>
-    <p><b>Role:</b>  photographing subjects, creating styling, post-production of photos, image retouching, study of photography, fashion photography.
+    <p><b>Role:</b> photographing subjects, creating styling, post-production of
+      photos, image retouching, study of photography, fashion photography.
     </p>
     <p><b>NABA 2018</b></p>
-    <div className="row  justify-content-center project-gallery">
+    <div className="row project-gallery" id="fc-pics-container">
+      <div id="fc1">
+        <GatsbyImage image={getImage(images.nodes[6])}/>
+      </div>
+      <div id="fc2">
+        <GatsbyImage image={getImage(images.nodes[5])}/>
+      </div>
+      <div id="fc3">
+        <GatsbyImage image={getImage(images.nodes[4])}/>
 
+        <div className={"position-relative"}>
+
+          <div id="fc4">
+            <GatsbyImage
+                image={getImage(images.nodes[3])}/>
+          </div>
+          <div id="fc5">
+            <GatsbyImage image={getImage(images.nodes[2])}/>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div className="row">
+      <div className="col-12">
+        <GatsbyImage image={getImage(images.nodes[1])}/>
+      </div>
+      <div className="col-12">
+        <GatsbyImage image={getImage(images.nodes[0])}/>
+      </div>
     </div>
   </Layout>;
 }
@@ -36,7 +68,10 @@ export const query = graphql`{
         id
         relativePath
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            quality: 100
+          )
         }
         publicURL
       } 

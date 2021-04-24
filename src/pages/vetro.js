@@ -22,13 +22,11 @@ export default function SanBenedetto({data: {images}}) {
       content.
     </p>
     <p><b>Politecnico di Milano 2020</b></p>
-    <div className="row  justify-content-center project-gallery">
-    </div>
   </Layout>;
 }
 export const query = graphql`{
     images: allFile(
-      filter: {relativePath: {regex: "/v_(.*)/i"}}
+      filter: {relativePath: {regex: "/ve_(.*)/i"}}
       sort: {order: DESC, fields: relativePath}
     ) { 
       nodes {
