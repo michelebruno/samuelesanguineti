@@ -55,7 +55,6 @@ export default function Home({data: {profile}}) {
         <div className="w-50">
           <GatsbyImage alt={'Samuele Sanguineti resume pic'}
                        image={getImage(profile)}/>
-
         </div>
       </div>
 

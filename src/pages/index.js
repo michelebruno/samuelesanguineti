@@ -51,14 +51,14 @@ export default function Home() {
     <div className="row">
       <div className="col-12 col-lg-6 border border-dark border-left-0
         border-bottom-0 d-flex flex-column justify-content-between"
-           style={{minHeight: '50vh'}}>
-        <h2 className={'h4 py-5'}>
+           style={{minHeight: '70vh'}} >
+        <h2 className={'h4 py-5'} >
           My name is Samuele,
           and I am attending a Master degree
           in Design for the Fashion System
           at Politecnico di Milano.
         </h2>
-        <h4 className={'text-right'}>Fashion and communication designer</h4>
+        <h4  >Fashion and communication designer</h4>
       </div>
       <nav className="col-12 col-lg-6 offset-lg-6">
         <ul className="list-unstyled projects-list">
