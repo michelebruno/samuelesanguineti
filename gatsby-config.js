@@ -4,6 +4,7 @@ module.exports = {
         description:
             'My name is Samuele, and I am attending a Master degree in Design for the Fashion System at Politecnico di Milano.',
         author: 'Michele Bruno',
+        siteUrl: 'https://samuelesanguineti.com'
     },
     plugins: [
         'gatsby-plugin-sass',
@@ -18,5 +19,7 @@ module.exports = {
         'gatsby-plugin-image',
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
+        'gatsby-plugin-sitemap',
+
     ]
 }
