@@ -37,7 +37,7 @@ export default function SanBenedetto({data: {images}}) {
         <div className="row">
 
           <div
-              style={{position:'absolute', top:30,right:0, left:0}}
+              style={{position: 'absolute', top: 30, right: 0, left: 0}}
               className="col">
             <GatsbyImage
                 image={getImage(images.nodes[2])}/>
@@ -80,7 +80,7 @@ export default function SanBenedetto({data: {images}}) {
       <div className="col-12 col-md-4">
         <GatsbyImage
             image={getImage(images.nodes[10])}
-          imgStyle={{transform: "scaleX(-1)"}}
+            imgStyle={{transform: 'scaleX(-1)'}}
         />
       </div>
 

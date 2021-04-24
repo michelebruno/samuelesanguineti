@@ -51,6 +51,10 @@ $line-height-base: 1;
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .project-gallery > div:not(.w-100) {
   padding-top: $grid-gutter-width ;
 }
