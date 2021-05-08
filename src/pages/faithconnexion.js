@@ -6,7 +6,7 @@ import Seo from '../components/Seo';
 
 export default function SanBenedetto({data: {images}}) {
 
-  return <Layout header={'Faith Connexion'}>
+  return <Layout header={'Faith Connexion'} next={"/thestripedshop/"}>
     <Seo title={'Faith Connexion'}/>
     <p>Faith connexion was my first photography job, done at NABA during my
       photography class. The job consisted of photographing for this e-commerce

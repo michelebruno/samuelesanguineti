@@ -5,7 +5,7 @@ import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 import Seo from '../components/Seo';
 
 export default function SanBenedetto({data: {images}}) {
-  return <Layout header={'Thé San Benedetto'}>
+  return <Layout header={'Thé San Benedetto'} next={"/vetro/"}>
     <Seo title={"Thé San Benedetto"}/>
 
     <p>

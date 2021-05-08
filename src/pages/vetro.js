@@ -5,7 +5,7 @@ import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 import Seo from '../components/Seo';
 
 export default function SanBenedetto({data: {images}}) {
-   return <Layout header={'Vetro'}>
+   return <Layout header={'Vetro'} next={"/acbc-x-sunnei/"}>
     <Seo title={'Vetro'}/>
     <p>Vetro is a group project about the creation of a Digital Branding
       strategy for an invented brand. We were asked to focalize on the analysis

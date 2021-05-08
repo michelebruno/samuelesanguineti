@@ -1,6 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
 $font-family-base: 'Work Sans', sans-serif;
+
+$headings-font-weight: 400;
 
 $font-weight-base: 300;
 $font-weight-bold: 600;
@@ -10,8 +12,6 @@ $link-color: #212529;
 $grid-gutter-width: 30px;
 
 $line-height-base: 1;
-
-
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -53,6 +53,10 @@ $line-height-base: 1;
 
 html {
   scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: 600 !important;
 }
 
 

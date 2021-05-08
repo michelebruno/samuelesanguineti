@@ -6,7 +6,7 @@ import Seo from '../components/Seo';
 
 export default function SanBenedetto({data: {images}}) {
 
-  return <Layout header={'The CJ'}>
+  return <Layout header={'The CJ'} next={"/golfodeltigullio/"}>
     <Seo title={'The CJ'}/>
     <p>CJ is a project born from the union of great works of art, namely
       Christo's Floating Piers and Jacquemus fashion show in honor of the 10th

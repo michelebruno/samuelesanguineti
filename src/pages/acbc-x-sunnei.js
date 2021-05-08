@@ -6,7 +6,7 @@ import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 
 export default function SanBenedetto({data: {images}}) {
 
-  return <Layout header={'ACBCxSUNNEI'}>
+  return <Layout header={'ACBCxSUNNEI'} next={"/photographs/"}>
     <Seo title={'ACBCxSUNNEI'}/>
     <p>The Archetypical Innovation in Sportswear workshop focuses on the
       redesign of a vintage garment, its actualization in terms of design,

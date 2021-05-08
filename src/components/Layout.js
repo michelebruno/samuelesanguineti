@@ -3,24 +3,23 @@ import '../scss/style.scss';
 import Link from 'gatsby-link';
 import {Helmet} from 'react-helmet';
 
-export default function Layout({children, header, hideNavigation}) {
+export default function Layout({children, header, hideNavigation, next}) {
 
   return <div className={'container-fluid'}>
     <Helmet>
       <meta name="google-site-verification"
             content="BRAsUIc4IGqGXYLixr2JW9eSBiMcR-UUHHcb4IXxrJM"/>
     </Helmet>
-    {hideNavigation || <nav className="row pt-5">
+    {hideNavigation || <nav className="row pt-5 justify-content-between align-items-center">
       <div className="col">
-        <Link to={'/'} className={'btn btn-text pl-0'}>
-          <svg width="44" height="8" viewBox="0 0 44 8" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M0.646446 3.64644C0.451183 3.8417 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976307 4.7308 0.659725 4.53553 0.464463C4.34027 0.2692 4.02369 0.2692 3.82843 0.464463L0.646446 3.64644ZM44 3.5L1 3.5L1 4.5L44 4.5L44 3.5Z"
-                fill="black"/>
-          </svg>
+        <Link to={'/'} className={'  pl-0 text-decoration-none'} style={{fontWeight: 400}}>
+          samuele<br/>
+          sanguineti
         </Link>
       </div>
+      {next && next && <div className="col-auto">
+        <Link to={next} className={"text-decoration-none"}>next</Link>
+      </div>}
     </nav>}
     {header && <header className="row ">
       <div className="col-12 col-md-6 py-3">
