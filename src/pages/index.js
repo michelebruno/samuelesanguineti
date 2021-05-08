@@ -18,10 +18,10 @@ export default function Home() {
       label: "Faith Connexion",
       path: "/faithconnexion/"
     },
-    // {
-    //   label: "The Striped Shop",
-    //   path: "/"
-    // },
+    {
+      label: "The Striped Shop",
+      path: "/thestripedshop/"
+    },
     {
       label: 'Thè San Benedetto',
       path: "/sanbenedetto/"
