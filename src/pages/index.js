@@ -34,10 +34,10 @@ export default function Home() {
       label: 'ACBC x Sunnei',
       path: "/acbc-x-sunnei/"
     },
-    // {
-    //   label: 'Personal Photo',
-    //   path: "/sanbenedetto/"
-    // },
+    {
+      label: 'Personal Photo',
+      path: "/photographs/"
+    },
   ]
   return <Layout hideNavigation>
     <Seo title={"Portfolio"}/>
@@ -51,7 +51,7 @@ export default function Home() {
     <div className="row">
       <div className="col-12 col-lg-6 border border-dark border-left-0
         border-bottom-0 d-flex flex-column justify-content-between"
-           style={{minHeight: '50vh'}}>
+           style={{minHeight: '65vh'}}>
         <h2 className={'h4 py-5'}  style={{fontWeight: 300}}>
           My name is Samuele,
           and I am attending a Master degree

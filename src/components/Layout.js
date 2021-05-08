@@ -10,15 +10,17 @@ export default function Layout({children, header, hideNavigation, next}) {
       <meta name="google-site-verification"
             content="BRAsUIc4IGqGXYLixr2JW9eSBiMcR-UUHHcb4IXxrJM"/>
     </Helmet>
-    {hideNavigation || <nav className="row pt-5 justify-content-between align-items-center">
+    {hideNavigation ||
+    <nav className="row pt-5 justify-content-between align-items-center">
       <div className="col">
-        <Link to={'/'} className={'  pl-0 text-decoration-none'} style={{fontWeight: 400}}>
+        <Link to={'/'} className={'  pl-0 text-decoration-none'}
+              style={{fontWeight: 400}}>
           samuele<br/>
           sanguineti
         </Link>
       </div>
       {next && next && <div className="col-auto">
-        <Link to={next} className={"text-decoration-none"}>next</Link>
+        <Link to={next} className={'text-decoration-none'}>next</Link>
       </div>}
     </nav>}
     {header && <header className="row ">
@@ -37,13 +39,11 @@ export default function Layout({children, header, hideNavigation, next}) {
             <a className="font-weight-bold small"
                href="mailto:samuele.sanguineti96@gmail.com">samuele.sanguineti96@gmail.com</a>
           </div>
-          <div className="col-4">
-            <a href="https://www.instagram.com/samusang/"
-               className={'btn btn-link btn-sm'}>Instagram</a><br/>
+          <div className="col-4 py-1">
+            <a href="https://www.instagram.com/samusang/">Instagram</a><br/>
           </div>
-          <div className="col-4">
-            <a href="https://www.linkedin.com/in/samuele-sanguineti-1269b5206/"
-               className={'btn btn-link btn-sm'}>Linkedin</a>
+          <div className="col-4 py-1">
+            <a href="https://www.linkedin.com/in/samuele-sanguineti-1269b5206/">Linkedin</a>
           </div>
         </div>
       </div>
