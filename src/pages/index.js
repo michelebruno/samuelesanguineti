@@ -30,10 +30,10 @@ export default function Home() {
       label: 'Vetro',
       path: "/vetro/"
     },
-    // {
-    //   label: 'ACBC x Sunnei',
-    //   path: "/sanbenedetto/"
-    // },
+    {
+      label: 'ACBC x Sunnei',
+      path: "/acbc-x-sunnei/"
+    },
     // {
     //   label: 'Personal Photo',
     //   path: "/sanbenedetto/"

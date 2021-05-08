@@ -26,11 +26,14 @@ export default function SanBenedetto({data: {images}}) {
       <div className="col-6 mx-auto">
         <GatsbyImage image={getImage(images.nodes[0])}></GatsbyImage>
       </div>
+      <div className="col-12">
+        <GatsbyImage alt={""} image={getImage(images.nodes[1]) }/>
+      </div>
       <div className="w-100"></div>
     </div>
     <div className="row project-gallery no-gutters">
       <div className="col-12">
-        <h3 className={"h6"}>BRAND AWARENESS <br/>
+        <h3 className={"h6 font-weight-bold"}>BRAND AWARENESS <br/>
           TEASING</h3>
       </div>
       <div className="col-5">
@@ -40,15 +43,12 @@ export default function SanBenedetto({data: {images}}) {
         <GatsbyImage image={getImage(images.nodes[4])}></GatsbyImage>
       </div>
     </div>
-    <div className="row project-gallery no-gutters">
+    <div className="row project-gallery ">
       <div className="col-12">
-        <h3 className={"h6"}>BRAND DISCOVERY <br/>
+        <h3 className={"h6 font-weight-bold"}>BRAND DISCOVERY <br/>
           WORKSHOP POSTER</h3>
       </div>
-      <div className="col-6">
-        <GatsbyImage image={getImage(images.nodes[5])}></GatsbyImage>
-      </div>
-      <div className="col-6">
+      <div className="col-12">
         <GatsbyImage image={getImage(images.nodes[6])}></GatsbyImage>
       </div>
       <div className="col-6 pt-0">
@@ -79,11 +79,8 @@ export default function SanBenedetto({data: {images}}) {
          <h3 className={"h6"}>POST PURCHASE<br/>
            INSTAGRAM STORIES</h3>
        </div>
-       <div className="col-6">
-         <GatsbyImage image={getImage(images.nodes[3])}></GatsbyImage>
-       </div>
-       <div className="col-6">
-         <GatsbyImage image={getImage(images.nodes[5])}></GatsbyImage>
+       <div className="col-12">
+         <GatsbyImage image={getImage(images.nodes[12])}></GatsbyImage>
        </div>
      </div>
   </Layout>;
