@@ -64,7 +64,7 @@ export default function SanBenedetto({data: {images}}) {
     </div>
      <div className="row project-gallery ">
        <div className="col-12">
-         <h3 className={"h6"}>PURCHASE EXPERIENCE<br/>
+         <h3 className={"h6 font-weight-bold"}>PURCHASE EXPERIENCE<br/>
            MAGAZINE AND WORKSHOP</h3>
        </div>
        <div className="col-6">
@@ -76,7 +76,7 @@ export default function SanBenedetto({data: {images}}) {
      </div>
      <div className="row project-gallery ">
        <div className="col-12">
-         <h3 className={"h6"}>POST PURCHASE<br/>
+         <h3 className={"h6 font-weight-bold"}>POST PURCHASE<br/>
            INSTAGRAM STORIES</h3>
        </div>
        <div className="col-12">

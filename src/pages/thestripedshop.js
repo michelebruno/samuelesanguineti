@@ -8,24 +8,21 @@ export default function TheStripedShop({data: {images}}) {
   return <Layout header={'The Striped Shop'} next={'/sanbenedetto'}>
     <Seo title={'The Striped Shop'}/>
     <p>
-      The Archetypical Innovation in Sportswear workshop focuses on the redesign
-      of a vintage garment, its actualization in terms of design, material
-      technologies and production processes. The whole experience considered
-      each part of the design process, starting from the marketing strategy,
-      passing through the design and engineering of the product, ending with a
-      deep reflection regarding the communication of the sustainable features at
-      different levels. The outcome had considered the garment development,
-      tackling all the research/ production/ communication steps, with a strong
-      focus on sustainability, innovative technologies and production
-      feasibility.
+      The Striped Shop is an itinerant pop-up store focused on lifestyle
+      necessities and inspired by the iconic Breton shirt, featuring all its
+      lovers’ needs. Its essence is deeply connected with the theme of the
+      journey; starting from finding it, a special treasure hunt organized to
+      celebrate the opening, will guide you through hints scattered around the
+      city to the actual shop where the exploration doesn’t simply ends but
+      turns into an out of the world experience. Your trip continues thanks to
+      our surreal VR experiences and a magic courtyard waiting for you to step
+      in.
     </p>
-    <p><b>Role:</b> creation of communication content, branding, creation of a
-      service, creation of customer journey, creation of app and web interface,
-      study of an advertising campaign, study of trends, study of
-      sustainability.
+    <p><b>Role:</b> Creation of a brand, creation of a retail-store, study of communication, study of the creation of a retail, how the retail world works, 3d modeling, creation of textures, creation of collages, moodboards, study of personas.
     </p>
-    <p><b>Group members:</b> Anna Baroni, Veronica Busignani, Paola Mazza,
-      Samuele Sanguineti, Matilde Voltolini
+    <p><b>Group members:</b> Anna Biganzoli, Beatrice Ferrario, Valeria Forleo, Samuele Sanguineti, Gaia Vittoria Milanese.
+    </p>
+    <p><b>Pubblications:</b> <a href="https://www.instagram.com/p/CMb5_z3sg3w/">https://www.instagram.com/p/CMb5_z3sg3w/</a>
     </p>
     <p><b>Politecnico di Milano 2020</b></p>
     <p><b><a href="/samuelesanguineti_tesi_The Striped Shop.pdf">(ita)
@@ -110,20 +107,20 @@ export default function TheStripedShop({data: {images}}) {
 
 export const query = graphql`{
     images: allFile(
-      filter: {relativePath: {regex: "/str_(.*)/i"}}
-      sort: {order: ASC, fields: relativePath}
-    ) { 
-      nodes {
-        id
-        relativePath
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            quality: 100
-          )
+        filter: {relativePath: {regex: "/str_(.*)/i"}}
+        sort: {order: ASC, fields: relativePath}
+    ) {
+        nodes {
+            id
+            relativePath
+            childImageSharp {
+                gatsbyImageData(
+                    layout: FULL_WIDTH
+                    quality: 100
+                )
+            }
+            publicURL
         }
-        publicURL
-      } 
-    } 
-  }
+    }
+}
 `;
