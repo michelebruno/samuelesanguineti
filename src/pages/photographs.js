@@ -12,7 +12,7 @@ export default function SanBenedetto({data: {images, debugged}}) {
       <div
           className="col-12 offset-lg-2 col-lg-3 d-flex flex-column justify-content-between">
         <GatsbyImage alt={''} image={getImage(images.nodes[0])}/>
-        <GatsbyImage alt={''} image={getImage(debugged)}/>
+        <GatsbyImage alt={''} image={getImage(images.nodes[1])}/>
       </div>
       <div className="col-12 col-lg-6 h-100">
         <GatsbyImage alt={''} image={getImage(images.nodes[2])}/>
