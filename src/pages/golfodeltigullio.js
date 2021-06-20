@@ -79,7 +79,7 @@ export const query = graphql`{
         id
         relativePath
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
         publicURL
       } 

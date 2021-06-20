@@ -56,7 +56,7 @@ export const query = graphql`{
         relativePath
         childImageSharp {
           gatsbyImageData( 
-            layout: FULL_WIDTH
+            layout: CONSTRAINED
           )
         }
       } 

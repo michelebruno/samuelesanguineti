@@ -8,7 +8,7 @@ export default function Layout({children, header, hideNavigation, next}) {
   return <div className={'container-fluid'}>
     <Helmet>
       <meta name="google-site-verification"
-            content="BRAsUIc4IGqGXYLixr2JW9eSBiMcR-UUHHcb4IXxrJM"/>
+            content="MSonG5T7-hyuQ4Y4_Trxd9nxmERW88MO0KTE84quymo"/>
     </Helmet>
     {hideNavigation ||
     <nav className="row pt-5 justify-content-between align-items-center">
